@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/RamiKhatib/whisper#readme",
   "dependencies": {
-    "angular": "^1.7.4"
+    "angular": "^1.7.4",
+    "angular-websocket": "^2.0.1"
   }
 }

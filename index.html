@@ -17,8 +17,9 @@
     <script type="text/javascript" src="./lib/contentCtrl.js"></script>
     <script type="text/javascript" src="./lib/login/loginCtrl.js"></script>
     <script type="text/javascript" src="./lib/services/socketFactory.js"></script>
+    <script type="text/javascript" src="./lib/class/user.js"></script>
 </head>
 <body id="content" ng-controller="contentCtrl">
-    <ng-include ng-hide="isLogged" src="'./lib/login/login.html'"></ng-include>
+    <ng-include ng-hide="user.isConnected" src="'./lib/login/login.html'"></ng-include>
 </body>
 </html>

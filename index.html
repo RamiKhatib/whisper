@@ -13,7 +13,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- App files -->
     <script type="text/javascript" src="./lib/app.js"></script>
+    <script type="text/javascript" src="./lib/contentCtrl.js"></script>
+    <script type="text/javascript" src="./lib/login/loginCtrl.js"></script>
 </head>
-<body id="body">
+<body id="content" ng-controller="contentCtrl">
+    <ng-include ng-hide="isLogged" src="'./lib/login/login.html'"></ng-include>
 </body>
 </html>
